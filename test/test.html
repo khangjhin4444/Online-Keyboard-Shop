@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider with Fancybox</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="main-image">
+            <a id="mainImageLink" href="../images/google.png" data-fancybox="gallery">
+                <img id="displayedImage" src="../images/google.png" alt="Main Image">
+            </a>
+        </div>
+        <div class="thumbnail-container">
+                <img class="thumbnail" src="../images/6522516.png" onclick="changeImage('../images/6522516.png')" alt="Thumbnail 1">
+           
+            
+                <img class="thumbnail" src="../images/images.png" onclick="changeImage('../images/images.png')" alt="Thumbnail 2">
+            
+            
+                <img class="thumbnail" src="../images/cart-icon.png" onclick="changeImage('../images/cart-icon.png')" alt="Thumbnail 3">
+            
+            
+                <img class="thumbnail" src="../images/facebook.png" onclick="changeImage('../images/facebook.png')" alt="Thumbnail 4">
+            
+        </div>
+    </div>
+    
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+          // Khởi tạo Fancybox với tùy chọn vuốt (swipe)
+          $('[data-fancybox="gallery"]').fancybox({
+            touch: {
+              vertical: false,  // Vô hiệu hóa vuốt theo chiều dọc
+              horizontal: true  // Kích hoạt vuốt theo chiều ngang
+            }
+          });
+        });
+    </script>
+</body>
+</html>
