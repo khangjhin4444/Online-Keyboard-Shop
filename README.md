@@ -1,4 +1,4 @@
-# JK Keyboard – E-commerce Website
+# Online-Keyboard-Shop
 
 **JK Keyboard** is an e-commerce website for selling keyboard-related products including mechanical keyboards, keyboard kits, switches, and keycaps. The platform provides a smooth online shopping experience for tech enthusiasts, gamers, and office workers alike.
 
