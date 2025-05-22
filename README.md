@@ -27,7 +27,6 @@
 - Forgot password reset using OTP
 - Persistent login (7 days)
 - Store contact and policy information
-- CRUD for admin
 
 ### Admin
 - Add, edit, or remove products
